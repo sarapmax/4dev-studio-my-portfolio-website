@@ -1,0 +1,103 @@
+.contact-info{
+  h4 {
+    margin: 0 0 51px 0;
+  }
+  p {
+    padding-left: 2px;
+    margin-bottom: 15px;
+    .info {
+      @include font-size(1,false);
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      width: 27%;
+      display: inline-block;
+      padding-right: 20px;
+      height: 100%;
+    }
+
+    .info-description {
+      width: 63%;
+      display: inline-block;
+    }
+  }
+  @media (max-width: 942px) {
+    margin-bottom:54px;
+    h4 {
+      margin-bottom: 47px;
+    }
+    p {
+      margin-bottom: 11px;
+      .info {
+        width: 17%;
+      }
+      .info-description {
+        width: 83%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 78px;
+    h4 {
+      @include font-size(1.6,fasle);
+      line-height: 24px;
+      margin-bottom: 59px;
+    }
+
+    p {
+      .info {
+        width: 34%;
+      }
+      .info-description {
+        width: 66%;
+      }
+    }
+  }
+}
+
+
+#contact-form {
+  margin-bottom: 22px;
+  .name {
+    margin-top: 24px;
+    margin-bottom: 23px;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      margin-bottom: 9px;
+    }
+  }
+
+  .message {
+    margin-top: 20px;
+    margin-bottom: 46px;
+    min-height: 90px;
+    @media (max-width: 767px) {
+      margin-top: 10px;
+      margin-bottom: 71px;
+    }
+  }
+
+}
+
+
+.form-wrapper {
+  @media (max-width: 767px) {
+    h4 {
+      @include font-size(1.6,fasle);
+      line-height: 24px;
+    }
+  }
+  .submit-btn {
+    padding: 15px 37px;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.contact-help-block {
+  min-height: 19px;
+  @include font-size(1.2,false);
+  font-weight: 300;
+
+}

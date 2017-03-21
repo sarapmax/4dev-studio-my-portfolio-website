@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'contact'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container
+                    .row
+                        .col-md-4.col-md-offset-1.col-sm-8.col-sm-offset-1.contact-info
+                            h4.text-1-opacity How to Find Me
+                            p
+                                span.info.text-uppercase adress
+                                span.info-description  Los Angeles, CA, United States
+                            p
+                                span.info.text-uppercase phone
+                                span.info-description  +794 85 3375 23
+                            p
+                                span.info.text-uppercase web site
+                                span.info-description  yourwebsitename.com
+                            p
+                                span.info.text-uppercase e-mail
+                                span.info-description  sam.jackson@gmail.com
+                        .col-md-5.col-md-offset-1.col-sm-8.col-sm-offset-1.form-wrapper
+                            h4.margin-0.text-1-opacity Get in Touch
+                            form(action="#" method="get")#contact-form
+                                .form-group.name
+                                    input(type="text" name="name")#input-name.form-control
+                                    label(for="input-name") Your name
+                                .form-group.email
+                                    input(type="text" name="email")#email.form-control
+                                    label(for="email") Your e-mail
+                                .form-group.text-area.message
+                                    textarea(rows="3" name="msg")#message.scroll.form-control
+                                    label(for="message") Message
+                                button(type="submit").btn.btn-primary.submit-btn send message
+                            .contact-help-block
+
+
+
+        include layout/_menu.jade
+        include layout/_scripts.jade

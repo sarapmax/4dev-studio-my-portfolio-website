@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_light.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'portfolio'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container-fluid
+                    .row
+                        .portfolio-carousel
+                            .item
+                                img( alt="" src='img/portfolio/slider/slide_1.png')
+                                .description
+                                    h5 MITA – Digital Advantage
+                                    p  Lorem ipsum dolor sit amet, ex probatus mea honestatis cum. Mea perpetua liberavisse vero voluptatibus in, pro at congue philosophia. Ea mea vero natum mazim, alterum fabulas apeirian ex vim.
+                                    a(href="portfolio-open_light.html").btn.btn-primary.text-uppercase.animsition-link view all project
+                            .item
+                                img( alt="" src='img/portfolio/slider/slide_2.png')
+                                .description
+                                    h5 MITA – Digital Advantage
+                                    p  Lorem ipsum dolor sit amet, ex probatus mea honestatis cum. Mea perpetua liberavisse vero voluptatibus in, pro at congue philosophia. Ea mea vero natum mazim, alterum fabulas apeirian ex vim.
+                                    a(href="portfolio-open_light.html").btn.btn-primary.text-uppercase.animsition-link view all project
+                            .item
+                                img( alt="" src='img/portfolio/slider/slide_3.png')
+                                .description
+                                    h5 MITA – Digital Advantage
+                                    p  Lorem ipsum dolor sit amet, ex probatus mea honestatis cum. Mea perpetua liberavisse vero voluptatibus in, pro at congue philosophia. Ea mea vero natum mazim, alterum fabulas apeirian ex vim.
+                                    a(href="portfolio-open_light.html").btn.btn-primary.text-uppercase.animsition-link view all project
+                            .item
+                                img( alt="" src='img/portfolio/slider/slide_4.png')
+                                .description
+                                    h5 MITA – Digital Advantage
+                                    p  Lorem ipsum dolor sit amet, ex probatus mea honestatis cum. Mea perpetua liberavisse vero voluptatibus in, pro at congue philosophia. Ea mea vero natum mazim, alterum fabulas apeirian ex vim.
+                                    a(href="portfolio-open_light.html").btn.btn-primary.text-uppercase.animsition-link view all project
+
+                        #portfolio-pagination.hidden-xs
+                            span
+                            span
+        include layout/_menu_light
+        include layout/_scripts

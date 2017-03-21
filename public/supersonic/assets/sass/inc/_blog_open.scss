@@ -1,0 +1,227 @@
+.post {
+  margin-top: 62px;
+  margin-bottom: 50px;
+  @media (max-width: 992px) {
+    margin-top:0;
+  }
+  .post-img {
+    margin-top: 49px;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 767px) {
+      margin-top: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+  h2 {
+    @media (max-width: 767px) {
+      @include font-size(2,false);
+      text-align: left
+    }
+  }
+  h4 {
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      margin-bottom: 9px;
+      @include font-size(1.6,false);
+      text-align: left;
+    }
+  }
+  .post-text {
+    margin-top: 46px;
+    .meta-data {
+      overflow: hidden;
+      margin-top: 55px;
+      @include font-size(1,false);
+      .activity {
+        display: inline-block;
+        span {
+          margin-right: 12px;
+        }
+        @media (max-width: 767px) {
+          float: right;
+          span {
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+      span {
+
+        &.share {
+          margin-left: 38px;
+          span  {
+            margin-right: 25px;
+          }
+          @media (max-width: 767px) {
+            float: left;
+            margin: 0;
+            span {
+              display: none;
+            }
+
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        margin-top: 25px;
+      }
+    }
+    @media (max-width: 767px) {
+      margin-top: 25px;
+    }
+  }
+}
+
+#comments {
+  margin-top: 73px;
+  margin-bottom: 43px;
+  .avatar {
+    margin-top: 30px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .comment-list {
+    margin: 36px 0 0;
+    padding: 0 10px;
+    @media (max-width: 767px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  li {
+    &.comment {
+      display: block;
+      overflow: hidden;
+      .comment-body {
+        display: flex;
+        justify-content: space-between;
+        .vertical-line {
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          left: 0;
+
+        }
+        >div {
+          position: relative;
+          padding: 0 18px;
+          width: calc(100% - 80px);
+          @media (max-width: 767px) {
+            width: calc(100% - 50px);
+          }
+          .comment-header {
+            margin-bottom: 5px;
+            h5 {
+              font-weight: 300;
+              letter-spacing: 0.011em;
+              margin: 0;
+            }
+            .time {
+              @include font-size(1.2,false);
+            }
+            @media (max-width: 767px) {
+              h5 {
+                font-weight: 700;
+                @include font-size(1.4,false);
+                line-height: 1.4rem;
+              }
+              .time {
+                @include font-size(1,false);
+              }
+              margin-bottom: 2px;
+            }
+          }
+          .comment-text {
+            p {
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+            margin-bottom: 4px;
+            @media (max-width: 767px) {
+              margin-bottom: 11px;
+              p {
+                line-height: 18px;
+              }
+            }
+          }
+          .comment-footer {
+            a {
+              transition: color .2s ease-in-out;
+              cursor: pointer;
+              margin-right: 20px;
+              &:hover {
+                text-decoration: none;
+              }
+              i {
+                margin-right: 8px;
+              }
+            }
+
+          }
+        }
+
+      }
+      .reply {
+        overflow: hidden;
+        width:  calc(100% - 80px);
+
+        > ol {
+          padding: 0;
+          margin: 32px 21px;
+        }
+        @media (max-width: 767px) {
+          width: calc(100% - 30px);
+          > ol {
+            padding: 0;
+            margin: 32px 0;
+          }
+        }
+
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 0;
+    h2 {
+      margin-top: 23px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.send-comment {
+  .name,.email {
+    width: 47%;
+  }
+  .text-area {
+    min-height: 90px;
+  }
+  button {
+    margin-top: 33px;
+  }
+  @media (max-width: 767px) {
+    .name,.email {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+
+}

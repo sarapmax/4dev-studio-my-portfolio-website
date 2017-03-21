@@ -1,0 +1,224 @@
+#mainGraphSvg text {
+  font-family: Poppins, sans-serif;
+  opacity: .3;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+#mainGraphSvg .x.axis text,
+#mainGraphSvg .x.axis .axis-point {
+  cursor: pointer;
+  -webkit-transition: opacity 400ms ease-in-out;
+  -o-transition: opacity 400ms ease-in-out;
+  -moz-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+#mainGraphSvg .x.axis .axis-point {
+  opacity: .2;
+}
+#mainGraphSvg .x.axis .tick.active .axis-point {
+  opacity: 1;
+}
+#mainGraphSvg .x.axis .tick.active text {
+  opacity: 1;
+}
+#mainGraphSvg .y.axis text {
+  font-size: 9px;
+}
+#mainGraphSvg .y.axis .axis-point {
+  opacity: .3;
+}
+#mainGraphSvg .y.axis .line {
+  stroke: url('#lines-tick-bg');
+  stroke-opacity: .6;
+  opacity: 1;
+}
+#mainGraphSvg .lines line {
+  cursor: pointer;
+  -webkit-transition: opacity 400ms ease-in-out;
+  -o-transition: opacity 400ms ease-in-out;
+  -moz-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  opacity: .3;
+}
+#mainGraphSvg .lines line.active {
+  opacity: 1 !important;
+}
+#mainGraphSvg .lines .lines-tick {
+  stroke-width: 1;
+  stroke: url('#lines-tick-bg');
+}
+#mainGraphSvg .lines .lines-tick-hover {
+  stroke: transparent;
+  stroke-opacity: 0;
+  stroke-width: 15;
+}
+@media (max-width: 1024px) {
+  #mainGraphSvg .lines .lines-tick-hover {
+    stroke-width: 25;
+  }
+}
+#mainGraphSvg .circles .circle,
+#mainGraphSvg .circles .helper-circle-small,
+#mainGraphSvg .circles .helper-circle-big {
+  cursor: pointer;
+}
+
+#mainGraphSvg .circles .circle {
+  -webkit-filter: url('#circle-shadow');
+  filter: url('#circle-shadow');
+}
+#mainGraphSvg .circles .helper-circle-small {
+  opacity: .35;
+  cursor: pointer;
+}
+#mainGraphSvg .circles .helper-circle-big {
+  opacity: .25;
+  cursor: pointer;
+  -webkit-filter: url('#circle-shadow-hover');
+  filter: url('#circle-shadow-hover');
+}
+#mainGraphSvg .tooltips .tooltip {
+  -webkit-transition: opacity 400ms ease-in-out;
+  -o-transition: opacity 400ms ease-in-out;
+  -moz-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  opacity: 0;
+}
+#mainGraphSvg .tooltips .tooltip.active {
+  opacity: 1;
+}
+#mainGraphSvg + .text-tooltip {
+  font-size: 12px;
+  font-family: Poppins, serif;
+  position: absolute;
+  top: 50px;
+}
+#mainGraphSvg + .text-tooltip.active .first-tooltip-helper {
+  opacity: 1 !important;
+}
+#mainGraphSvg + .text-tooltip.active .second-tooltip-helper {
+  z-index: 1;
+}
+#mainGraphSvg + .text-tooltip.active .second-tooltip-helper .second-tooltip-helper-container {
+  right: 0;
+}
+#mainGraphSvg + .text-tooltip.left .first-tooltip-helper {
+  left: 0;
+}
+#mainGraphSvg + .text-tooltip.left.active .second-tooltip-helper .second-tooltip-helper-container {
+  left: 0;
+}
+#mainGraphSvg + .text-tooltip.left .second-tooltip-helper {
+  right: 35px;
+  text-align: right;
+}
+#mainGraphSvg + .text-tooltip.left .second-tooltip-helper .second-tooltip-helper-container {
+  left: 100%;
+}
+#mainGraphSvg + .text-tooltip .first-tooltip-helper {
+  position: absolute;
+  left: -42px;
+  top: 0;
+  opacity: 0;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  line-height: 1;
+  white-space: nowrap;
+}
+#mainGraphSvg + .text-tooltip .second-tooltip-helper {
+  overflow: hidden;
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: z-index 300ms ease-in-out;
+  -o-transition: z-index 300ms ease-in-out;
+  -moz-transition: z-index 300ms ease-in-out;
+  transition: z-index 300ms ease-in-out;
+}
+@media (max-width: 1024px) {
+  #mainGraphSvg + .text-tooltip .second-tooltip-helper {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  #mainGraphSvg + .text-tooltip .second-tooltip-helper {
+    width: 135px;
+  }
+}
+#mainGraphSvg + .text-tooltip .second-tooltip-helper .second-tooltip-helper-container {
+  position: relative;
+  right: 100%;
+  -webkit-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+#mainGraphSvg + .text-tooltip .year {
+  font-size: 18px;
+}
+#mainGraphSvg + .text-tooltip .subtitle {
+  opacity: .5;
+}
+#mainGraphSvg + .text-tooltip .subtitle {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+#mainGraphSvg + .text-tooltip .title {
+  font-size: 22px;
+  margin: 0;
+  line-height: 1;
+}
+#mainGraphSvg + .text-tooltip .text {
+  line-height: 20px;
+}
+#mainGraphSvg #path-line-bg stop {
+  stop-opacity: 1;
+}
+#mainGraphSvg #path-line-bg stop[offset="0%"] {
+  stop-color: #E31E64;
+}
+#mainGraphSvg #path-line-bg stop[offset="100%"] {
+  stop-color: #FF7D43;
+}
+#mainGraphSvg #path-area-bg stop[offset="0%"] {
+  stop-opacity: .4;
+}
+#mainGraphSvg #path-area-bg stop[offset="75%"] {
+  stop-opacity: 0;
+}
+#mainGraphSvg #lines-tick-bg stop[offset="0%"] {
+  stop-opacity: .1;
+}
+#mainGraphSvg #lines-tick-bg stop[offset="45%"] {
+  stop-opacity: .5;
+}
+#mainGraphSvg #lines-tick-bg stop[offset="65%"] {
+  stop-opacity: .1;
+}
+#mainGraphSvg #lines-tick-bg stop[offset="100%"] {
+  stop-opacity: .1;
+}
+#mainGraphSvg #left-shadow-bg stop[offset="20%"] {
+  stop-opacity: 1;
+}
+#mainGraphSvg #left-shadow-bg stop[offset="50%"] {
+  stop-opacity: .8;
+}
+#mainGraphSvg #left-shadow-bg stop[offset="100%"] {
+  stop-opacity: 0;
+}
+#mainGraphSvg #right-shadow-bg stop[offset="0%"] {
+  stop-opacity: 0;
+}
+#mainGraphSvg #right-shadow-bg stop[offset="50%"] {
+  stop-opacity: .8;
+}
+#mainGraphSvg #right-shadow-bg stop[offset="80%"] {
+  stop-opacity: 1;
+}

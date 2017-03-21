@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.about-page.animsition
+        include layout/_preloader.jade
+        - var page = 'about'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container
+                    .row.hideaway-content
+                        .col-md-8
+                            img.person-photo( alt="" src='img/about-1.png')
+                        .col-md-4
+                            h1.about-header.text-1-opacity
+                                span About&nbsp;
+                                |Myself
+                            div.contact-info
+                                p
+                                    span.info.text-uppercase age
+                                    span.info-description  24 years old
+                                p
+                                    span.info.text-uppercase address
+                                    span.info-description  Los Angeles, CA, United States
+                                p
+                                    span.info.text-uppercase e-mail
+                                    span.info-description  sam.jackson@gmail.com
+                                p
+                                    span.info.text-uppercase phone
+                                    span.info-description  +794 85 3375 23
+                            p
+                                | Lorem ipsum dolor sit amet, sed dico discere prodesset an. Sed ipsum verear vocibus an, et vim propriae platonem. Dicit adversarium in ius, ne usu quis invenire senserit. Natum definitionem mel ut.
+                            p
+                                | Mea wisi periculis hendrerit ei. Vix laudem offendit  dolor isp theophrastus te. Ut eam phaedrum molestiae, pro at autem
+                            p.download-resume
+                                i(aria-hidden="true").fa.fa-file-text
+                                a(href="#") Download resume
+
+                    .row.about-toggle-button
+                            .btn-path
+                                .line
+                                .circle-btn#aboutGraph
+                    .showing-content
+                        div.about-graph-buttons
+                            a(href="#").skills Skills
+                            a(href="#").education Education & Experience
+                        div.about-graph.container
+        include layout/_menu.jade
+        include layout/_scripts.jade

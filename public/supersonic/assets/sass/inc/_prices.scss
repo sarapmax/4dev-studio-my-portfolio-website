@@ -1,0 +1,329 @@
+.price-style-1 {
+  overflow: hidden;
+  .line {
+    position: relative;
+    left: -5%;
+    right: -5%;
+    width: 110%;
+  }
+  .price-header, .price-info  {
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    width: 27.4%;
+    text-align: center;
+    opacity: .5;
+    user-select: none;
+    h4 {
+      margin-top: 33px;
+    }
+    h2 {
+      font-weight: 300;
+      margin-top: 27px;
+      margin-bottom: 2px;
+    }
+  }
+  .price-header {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+    .underline {
+      transition: inherit;
+      position: absolute;
+      bottom: -2px;
+      width: 0;
+      left: 50%;
+      right: 50%;
+      height: 2px;
+    }
+    &.active {
+      user-select: initial;
+      opacity: 1 !important;
+      .underline {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        opacity: 1;
+      }
+    }
+    &.active,&:hover {
+      opacity: .7;
+      transition: all .3s ease-in-out;
+
+      h4 {
+
+        transition: inherit;
+      }
+
+      h2 {
+        transition: inherit;
+      }
+    }
+  }
+  .price-info {
+    padding: 35px;
+    &.active {
+      user-select: initial;
+      opacity: 1 !important;
+      a {
+        visibility: visible;
+      }
+
+    }
+    p {
+      margin-bottom: 6px;
+    }
+
+    a {
+      margin-top: 52px;
+      padding: 15px 42px;
+      visibility: hidden;
+    }
+  }
+  @media (max-width: 992px) {
+    width: 900px;
+    position: relative;
+
+    .line {
+      position: relative;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+    .price-header, .price-info {
+      width: 270px;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 170vw;
+
+    .price-header, .price-info {
+      width: 55vw;
+    }
+    .price-info {
+      padding: 25px 0 0 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+.prices-table {
+  margin: 0 -15px;
+
+  .line {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-bottom: 1px;
+  }
+  .table-headers {
+    padding-right: 8%;
+    .price-header {
+      width: 16.6666667%;
+      border-radius: 3px 3px 0 0;
+      position: relative;
+      cursor: pointer;
+      text-align: center;
+      padding-bottom: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .underline {
+        transition: inherit;
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        left: 50%;
+        right: 50%;
+        height: 2px;
+      }
+      h4 {
+        letter-spacing: .05em;
+      }
+      h2 {
+        font-weight: 300;
+        margin-bottom: 0;
+        margin-top: 28px;
+      }
+      > p {
+        margin-top: -4px;
+        margin-bottom: 0;
+      }
+      &.active {
+        opacity: 1 !important;
+        .underline {
+          left: 10%;
+          right: 10%;
+          width: 80%;
+          opacity: 1;
+        }
+      }
+      &.active,&:hover {
+        opacity: .7;
+        transition: all .3s ease-in-out;
+
+        h4 {
+          transition: inherit;
+        }
+
+        h2 {
+          transition: inherit;
+        }
+      }
+    }
+  }
+
+  .table-row {
+    padding-right: 8%;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &:last-child {
+      border: none !important;
+    }
+
+    p {
+      margin-bottom: 0;
+      min-height: 35px;
+      transition: color .3s ease;
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      width: 16.66666667%;
+      text-align: center;
+
+      &:first-child {
+        @include font-size(1.4,false);
+        justify-content: flex-start;
+        text-align: left;
+      }
+
+
+      .circle {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transition: background-color .3s ease;
+
+      }
+    }
+  }
+  .btn-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8%;
+    > div {
+      display: inline-block;
+      width: 16.6666667%;
+      text-align: center;
+      a {
+        margin-top: 40px;
+        opacity: 0;
+        padding: 15px 36px;
+      }
+    }
+
+  }
+  @media (max-width: 992px) {
+    width: 76%;
+    margin: 0 auto;
+    .table-headers {
+      padding: 0;
+      .price-header {
+        width: 30%;
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+    .table-row {
+
+      .circle-hidden {
+        display: none;
+      }
+      p {
+        &:first-child {
+          width: 50%;
+        }
+      }
+      p:not(:first-child) {
+        animation: fadeIn 1.5s;
+      }
+    }
+    .btn-price-wrapper {
+      padding: 0;
+      display: block;
+      position: relative;
+      > div {
+        width: 100%;
+        top:0;
+        position: absolute;
+        &:first-child {
+          position: relative;
+          height: 84px;
+        }
+      }
+
+    }
+  }
+  @media (max-width: 767px) {
+    .overflow-hidden {
+      min-height: 109px;
+      position: relative;
+    }
+    width: auto;
+    .overflow-auto-sm {
+      white-space: nowrap;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      padding-bottom: 30px;
+    }
+    .table-headers {
+      .price-header {
+        h4 {
+          margin-top: 0;
+          @include font-size(1.6,false);
+        }
+        h2 {
+          @include font-size(2.6,false);
+          margin-top:0;
+        }
+        p {
+          @include font-size(.8,true)
+        }
+      }
+    }
+    .table-row {
+      padding: 0;
+
+      p {
+        &:first-child {
+          width: 70%
+        }
+      }
+    }
+    .table-headers {
+      width: 150%;
+    }
+    .line {
+      width: 150%;
+    }
+    a {
+      width: 100%;
+    }
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

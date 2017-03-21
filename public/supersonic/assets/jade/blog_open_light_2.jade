@@ -1,0 +1,143 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_light.jade
+    body.animsition
+        include layout/_preloader.jade
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container
+                    .row
+                        .post
+                            .row.margin-0
+                                .col-md-10.col-md-offset-1.col-sm-10
+                                    h2.text-center.text-1-opacity Winter Beauty
+                                    .post-img
+                                        img( alt="" src="img/blog/blog-open-img-2.png")
+                                .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-1
+                                    .post-text
+                                        p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus probatus constituto ad has, ei minim dolor sit. Meliore repudiandae no quo, ne est malis tantas sapientem. Et eum appareat mediocrem, ex eam minimum efficiendi interesset, natum prompta ne quo. Ea nostro detracto pri.
+                                        p In ius assentior signiferumque mediocritatem, duo ei summo tollit abhorreant, eam ei eripuit fabulas salutandi. Sale fugit probatus ei eum, fabulas praesent has ea. Has ut lorem soluta admodum, no mel utinam fabellas. Modo concludaturque cum cu, ut audiam maiorum nec. Eu utinam vivendo voluptua vis, in utroque albucius vis.
+                                        .meta-data
+                                            .activity
+                                                span
+                                                    i.fa.fa-eye
+                                                    |&nbsp;&nbsp;1,257
+                                                span
+                                                    i.fa.fa-comment
+                                                    |&nbsp;&nbsp;42
+                                                span
+                                                    i.fa.fa-heart
+                                                    |&nbsp;&nbsp;318
+                                            span.share.text-uppercase
+                                                span share:
+                                                a(href="#").fa.fa-facebook
+                                                a(href="#").fa.fa-instagram
+                                                a(href="#").fa.fa-twitter
+                                                a(href="#").fa.fa-pinterest
+
+                                .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-1
+                                    #comments
+                                        h2.brand-color.text-center Comments
+                                        ol.comment-list
+                                            li.comment
+                                                .comment-body
+                                                    a(href="#!").avatar
+                                                        img( alt="" src="img/blog/comment_1.png")
+                                                    div
+                                                        .vertical-line
+                                                        .comment-header
+                                                            h5 Nick Michael
+                                                            span.time
+                                                                |12.09.2016 12:34
+                                                        .comment-text
+                                                            p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus probatus constituto ad has, ei minim dolor sit. Meliore repudiandae no quo, ne est malis tantas sapientem.
+                                                        .comment-footer
+                                                            a(href="#!").reply
+                                                                i.fa.fa-reply
+                                                                |Reply
+                                                            a.like
+                                                                i.fa.fa-thumbs-o-up
+                                                                |26
+                                                            a.dislike
+                                                                i.fa.fa-thumbs-o-down
+                                                                |0
+                                                .reply.pull-right
+                                                    ol.comment.list-unstyled
+                                                        li.comment
+                                                            .comment-body
+                                                                a(href="#!").avatar
+                                                                    img( alt="" src="img/blog/comment_2.png")
+                                                                div
+                                                                    .vertical-line
+                                                                    .comment-header
+                                                                        h5 Nick Michael
+                                                                        span.time
+                                                                            |12.09.2016 12:34
+                                                                    .comment-text
+                                                                        p Lorem ipsum dolor sit amet, eros habemus ex pri
+                                                                    .comment-footer
+                                                                        a(href="#!").reply
+                                                                            i.fa.fa-reply
+                                                                            |Reply
+                                                                        a.like
+                                                                            i.fa.fa-thumbs-o-up
+                                                                            |26
+                                                                        a.dislike
+                                                                            i.fa.fa-thumbs-o-down
+                                                                            |0
+                                            li.comment
+                                                .comment-body
+                                                    a(href="#!").avatar
+                                                        img( alt="" src="img/blog/comment_1.png")
+                                                    div
+                                                        .vertical-line
+                                                        .comment-header
+                                                            h5 Nick Michael
+                                                            span.time
+                                                                |12.09.2016 12:34
+                                                        .comment-text
+                                                            p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus probatus constituto ad has, ei minim dolor sit. Meliore repudiandae no quo, ne est malis tantas sapientem.
+                                                        .comment-footer
+                                                            a(href="#!").reply
+                                                                i.fa.fa-reply
+                                                                |Reply
+                                                            a.like
+                                                                i.fa.fa-thumbs-o-up
+                                                                |26
+                                                            a.dislike
+                                                                i.fa.fa-thumbs-o-down
+                                                                |0
+
+                                .col-md-12.col-sm-10
+                                    .line
+                                .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-1
+                                    .send-comment
+                                        h4 Send a comment
+                                        form
+                                            .name.form-group.pull-left
+                                                input(id="name" type="text" name="name").form-control
+                                                label(for="name") Your name
+                                            .email.form-group.pull-right
+                                                input(id="email" type="text" name="email").form-control
+                                                label(for="email") Your name
+                                            .clearfix
+                                            .form-group.text-area.message
+                                                textarea(rows="3" name="msg")#message.scroll.form-control
+                                                label(for="message") Comment
+                                            button.btn.btn-primary comment
+            .container.navigation
+                .portfolio-open-nav
+                    a(href="blog_open_light.html").prev.animsition-link
+                        i.fa.fa-angle-left
+                        | prev
+                    a(href="blog_open_light_2.html").next.animsition-link
+                        | next
+                        i.fa.fa-angle-right
+                    a(href="blog.html").close.animsition-link
+                        span
+                        span
+        include layout/_scripts.jade

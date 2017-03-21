@@ -1,0 +1,10 @@
+pre {
+	border:0px;
+	padding: 0px;
+	background: #8e8d89;
+	border-radius: 0px;
+}
+
+.vertical-text {
+	vertical-align: top;
+}

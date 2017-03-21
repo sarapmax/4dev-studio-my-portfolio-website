@@ -1,0 +1,130 @@
+.open-demo, .select-page {
+  a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    @include font-size(1.8,false);
+    img {
+      transition: inherit;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.open-demo, .select-page {
+  a {
+    &:hover {
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.logo {
+  margin-top: 49px;
+  display: inline-block;
+  @include font-size(2,false);
+  text-decoration: none !important;
+  img {
+    margin-right: 30px;
+  }
+  @media (max-width: 767px) {
+    img {
+      width: 20px;
+      margin-right: 15px;
+    }
+    @include font-size(1.6,false);
+  }
+}
+
+
+.theme-select {
+  letter-spacing: 0.2em;
+  margin-top: 57px;
+  display: inline-block;
+  float: right;
+  a {
+    cursor: pointer;
+    text-decoration: none !important;
+    @include font-size(1.2,false);
+    display: inline-block;
+    transition: color .2s ease-in-out;
+    &:first-child {
+      margin-right: 35px;
+    }
+
+  }
+  @media (max-width: 767px) {
+    margin-top: 51px;
+    a {
+      span {
+        display: none;
+      }
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+
+}
+.demo-page {
+  .open-demo {
+    margin-bottom: 38px;
+  }
+  h1 {
+    &:first-child {
+      margin-bottom: 43px;
+    }
+
+  }
+  .portfolio {
+    margin-bottom: 54px;
+  }
+  .select-page {
+    margin-bottom: 38px;
+    &:last-child {
+      margin-top: 52px;
+      margin-bottom: 50px;
+    }
+  }
+  @media (max-width: 992px) {
+    .select-page {
+      a {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .open-demo {
+      margin-bottom: 20px;
+    }
+    .select-page {
+      a {
+        margin-bottom: 20px;
+      }
+    }
+    .select-page {
+      margin: 0 !important;
+    }
+    h1 {
+      @include font-size(2.6,false);
+      margin-top: 30px !important;
+      margin-bottom: 15px !important;
+    }
+  }
+}
+.background-demo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

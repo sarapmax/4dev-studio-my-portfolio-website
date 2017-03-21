@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.demo-page.animsition
+        include layout/_preloader.jade
+        .background-demo
+        .container
+            .row.demo-header
+                .col-md-3.col-sm-5.col-xs-6
+                    a(href="#").logo
+                        img( alt="" src="img/logo.png")
+                        | Supersonic
+
+                .col-md-4.col-md-offset-5.col-sm-5.col-xs-6
+                    .theme-select
+                        a(href="#").text-uppercase.active dark
+                            span &nbsp; theme
+                        a(href="promo_light.html").text-uppercase light
+                            span &nbsp;theme
+            .row
+                h1.text-1-opacity.text-center Demo
+                .col-md-4.col-md-offset-4
+                    .open-demo
+                        a(target="_blank" href="home.html")
+                            img( alt="" src="img/promo/main.jpg")
+                            |Open Site
+            .row
+                h1.text-1-opacity.text-center.portfolio Portfolio
+                .select-page
+                    .row.margin-0
+                        .col-md-4
+                            a(target="_blank" href="portfolio_slider.html")
+                                img( alt="" src="img/promo/slider.jpg")
+                                |Carousel
+                        .col-md-4
+                            a(target="_blank" href="portfolio_masonry.html")
+                                img( alt="" src="img/promo/masonry.jpg")
+                                | Masonry
+                        .col-md-4
+                            a(target="_blank" href="portfolio_grid.html")
+                                img( alt="" src="img/promo/grid.jpg")
+                                |Grid
+            .row
+                h1.text-1-opacity.text-center Prices
+                .select-page
+                    .row.margin-0
+                        .col-md-4.col-md-offset-2
+                            a(target="_blank" href="prices-style-2.html")
+                                img( alt="" src="img/promo/prices_2.jpg")
+                                |More Content
+                        .col-md-4
+                            a(target="_blank" href="prices-style-1.html")
+                                img( alt="" src="img/promo/prices.jpg")
+                                |Less Content
+        include layout/_scripts.jade

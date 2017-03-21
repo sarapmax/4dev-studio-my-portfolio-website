@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'prices'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container.overflow-hidden.gradient-sides
+                    .col-md-10.col-md-offset-1.overflow-auto-sm#price-scroll
+                        .price-style-1
+                            .space-between
+                                .price-header
+                                    h4 Basic Plan
+                                    h2 50 $
+                                    p.text-uppercase per month
+                                    .underline
+                                .price-header.active
+                                    h4 Standard Plan
+                                    h2 100 $
+                                    p.text-uppercase per month
+                                    .underline
+                                .price-header
+                                    h4 Premium Plan
+                                    h2 200 $
+                                    p.text-uppercase per month
+                                    .underline
+                            .line
+                            .space-between
+                                .price-info
+                                    p
+                                        span 3 &#160;
+                                        |Design Version
+                                    p 15 Users
+                                    p
+                                        span 3.000 &#160;
+                                        | Entries per Month
+                                    p   Long Term Supporting
+                                    p
+                                        span 500 MB &#160;
+                                        | Storage
+                                    a.btn.btn-primary get started
+                                .price-info.active
+                                    p
+                                        span 3 &#160;
+                                        | Design Version
+                                    p 15 Users
+                                    p
+                                        span 3.000 &#160;
+                                        | Entries per Month
+                                    p   Long Term Supporting
+                                    p
+                                        span 500 MB &#160;
+                                        | Storage
+                                    a.btn.btn-primary get started
+                                .price-info
+                                    p
+                                        span 3 &#160;
+                                        |Design Version
+                                    p 15 Users
+                                    p
+                                        span 3.000 &#160;
+                                        | Entries per Month
+                                    p   Long Term Supporting
+                                    p
+                                        span 500 MB &#160;
+                                        |Storage
+                                    a.btn.btn-primary get started
+        include layout/_menu.jade
+        include layout/_scripts.jade

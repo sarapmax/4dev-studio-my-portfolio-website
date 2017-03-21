@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_light.jade
+    body.animsition
+        include layout/_preloader.jade
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container-fluid
+                    .row
+                        .container
+                            .row
+                                .col-md-7.col-md-offset-1.visible-lg.visible-md
+                                    .open-project-lightbox
+                                        a(href="img/portfolio/open/open_portfolio_3.png")
+                                            span.plus
+                                                span
+                                                span
+                                            img( alt="" src="img/portfolio/open/open_portfolio_3.png")
+                                        a(href="img/portfolio/open/open_portfolio_4.png")
+                                            span.plus
+                                                span
+                                                span
+                                            img( alt="" src="img/portfolio/open/open_portfolio_4.png")
+                                .col-md-3.col-md-offset-0.col-sm-8.col-sm-offset-1.project-description
+                                    h5.text-1-opacity HC – hand clock
+                                    p Lorem ipsum dolor sit amet, ex probatus honestatis cum. Mea perpetua liberavisse voluptatibus in, pro at congue philosophia. Ea mea vero natum mazim, alterum fabulas apeirian ex vim. Vix epicurei suavitate patrioque ne. Noluisse intellegat scriptorem te mei, in habeo constituam duo. Eum oratio tacimates eloquentiam ut. Modo luptatum ad sea.
+                                    .project-info
+                                        p
+                                            span.info.text-uppercase client
+                                            span.info-description  HC
+                                        p
+                                            span.info.text-uppercase services
+                                            span.info-description  design
+                                        p
+                                            span.info.text-uppercase year
+                                            span.info-description  2016
+                                        p
+                                            span.info.text-uppercase website
+                                            span.info-description
+                                            a(href="https://themeforest.net/user/scientecraft/portfolio" target="_blank")  www.hccompany.com
+                                        p
+                                            span.info.text-uppercase share
+                                            span.info-description
+                                                a(href="#").fa.fa-facebook
+                                                a(href="#").fa.fa-instagram
+                                                a(href="#").fa.fa-twitter
+                                                a(href="#").fa.fa-pinterest
+        .container.navigation
+            .portfolio-open-nav
+                a(href="portfolio-open_light.html").prev.animsition-link
+                    i.fa.fa-angle-left
+                    |prev
+                a(href="portfolio-open_light_2.html").next.animsition-link
+                    |next
+                    i.fa.fa-angle-right
+                a(href="portfolio_grid_light.html").close.animsition-link
+                    span
+                    span
+        include layout/_scripts.jade

@@ -1,0 +1,65 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Lucid
+Version:	1.0.0
+Author: Scientecraft
+AuthorURL: https://themeforest.net/user/scientecraft/portfolio
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Navigation / .navigation
+3. Content / .main-content
+4. Home / .title-box
+5. About / .about-page
+6. Portfolio grid / .portfolio-list
+7. Portfolio masonry/ .portfolio-list-masonry
+8. Portfolio slider / .portfolio-carousel
+9. Portfolio open project/ .open-project-lightbox
+10. reviews carousel / .carousel
+11. prices / price-style-1
+12. prices table / .prices-table
+13. contact form / #contact-form
+14 sidebar / .sidebar
+15 blog previews / preview-wrapper
+15 blog post / .post
+-------------------------------------------------------------------*/
+// variables list
+@import 'inc/_variables.scss';
+// mixins list
+@import 'inc/_mixin.scss';
+//typography
+@import 'inc/_typography.scss';
+//grid for tablet
+@import 'inc/_grid.scss';
+// about page styles
+@import 'inc/_about.scss';
+//general styles
+@import 'inc/_general.scss';
+//menu styles
+@import 'inc/_menu.scss';
+//reviews page styles
+@import 'inc/_reviews.scss';
+// prices styles
+@import 'inc/_prices.scss';
+//contacts styles
+@import 'inc/_contacts.scss';
+// button styles
+@import 'inc/_buttons.scss';
+// home styles
+@import 'inc/_home.scss';
+// portfolio styles
+@import 'inc/_portfolio.scss';
+// open project styles
+@import 'inc/_portfolio-open.scss';
+// Open post styles
+@import 'inc/_blog_open.scss';
+// blog styles
+@import 'inc/_blog.scss';
+// demo pages styles
+@import 'inc/_demo.scss';
+// preloader
+@import 'inc/_preloader.scss';

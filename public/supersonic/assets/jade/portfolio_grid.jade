@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'portfolio'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container
+                    .row.overflow-visible
+                        .col-sm-12
+                            .filter-wrapper
+                                .portfolio-filter.filter
+                                    button.grid-btn.active(data-filter="*") All
+                                    button.grid-btn(data-filter=".photoshop") Photoshop
+                                    button.grid-btn(data-filter=".drupal") Drupal
+                                    button.grid-btn(data-filter=".php") PHP&MySQL
+                                    button.grid-btn(data-filter=".js") JavaScript
+                                    button.grid-btn(data-filter=".css") HTML&CSS
+                            .portfolio-list.grid.list-unstyled
+                                .grid-sizer
+                                .gutter-sizer
+                                .portfolio-item
+                                    .content
+                                        span
+                                            a(href='portfolio-open.html').animsition-link Round Stairs
+                                        img( alt="" src='img/portfolio/grid/grid_1.png')
+                                        a(href='portfolio-open.html').animsition-link
+
+                                .portfolio-item.photoshop.php.css
+                                    .content
+                                        span
+                                            a(href='portfolio-open.html').animsition-link Papers
+                                        img( alt="" src='img/portfolio/grid/grid_2.png')
+                                        a(href='portfolio-open.html').animsition-link
+                                .portfolio-item.js.css
+                                    .content
+                                        span
+                                            a(href='portfolio-open.html').animsition-link Stairs
+                                        img( alt="" src='img/portfolio/grid/grid_3.png')
+                                        a(href='portfolio-open.html').animsition-link
+                                .portfolio-item.drupal.php
+                                    .content
+                                        span
+                                            a(href='portfolio-open.html').animsition-link Chair
+                                        img( alt="" src='img/portfolio/grid/grid_4.png')
+                                        a(href='portfolio-open.html').animsition-link
+                                .portfolio-item.photoshop.js.css
+                                    .content
+                                        span
+                                            a(href='portfolio-open.html').animsition-link Car
+                                        img( alt="" src='img/portfolio/grid/grid_5.png')
+                                        a(href='portfolio-open.html').animsition-link
+                                .portfolio-item.drupal.css
+                                    .content
+                                        span
+                                            a(href='portfolio-open.html').animsition-link Clothes
+                                        img( alt="" src='img/portfolio/grid/grid_6.png')
+                                        a(href='portfolio-open.html').animsition-link
+
+
+
+        include layout/_menu
+        include layout/_scripts

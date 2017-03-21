@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_light.jade
+    body.demo-page.animsition
+        include layout/_preloader.jade
+        .background-demo
+        .container
+            .row.demo-header
+                .col-md-3.col-sm-5.col-xs-6
+                    a(href="#").logo
+                        img( alt="" src="img/logo.png")
+                        | Supersonic
+
+                .col-md-4.col-md-offset-5.col-sm-5.col-xs-6
+                    .theme-select
+                        a(href="index.html").text-uppercase dark
+                            span &nbsp; theme
+                        a(href="#").text-uppercase.active light
+                            span &nbsp;theme
+            .row
+                h1.text-1-opacity.text-center Demo
+                .col-md-4.col-md-offset-4
+                    .open-demo
+                        a(target="_blank" href="home_light.html")
+                            img( alt="" src="img/promo/main_L.jpg")
+                            | Open Site
+            .row
+                h1.text-1-opacity.text-center.portfolio Portfolio
+                .select-page
+                    .row.margin-0
+                        .col-md-4
+                            a(target="_blank" href="portfolio_slider_light.html")
+                                img( alt="" src="img/promo/slider_L.jpg")
+                                | Carousel
+                        .col-md-4
+                            a(target="_blank" href="portfolio_masonry_light.html")
+                                img( alt="" src="img/promo/masonry_L.jpg")
+                                | Masonry
+                        .col-md-4
+                            a(target="_blank" href="portfolio_grid_light.html")
+                                img( alt="" src="img/promo/grid_L.jpg")
+                                | Grid
+            .row
+                h1.text-1-opacity.text-center Prices
+                .select-page
+                    .row.margin-0
+                        .col-md-4.col-md-offset-2
+                            a(target="_blank" href="prices-style-2_light.html")
+                                img( alt="" src="img/promo/prices_2_L.jpg")
+                                | More Content
+                        .col-md-4
+                            a(target="_blank" href="prices-style-1_light.html")
+                                img( alt="" src="img/promo/prices_L.jpg")
+                                | Less Content
+        include layout/_scripts.jade
+

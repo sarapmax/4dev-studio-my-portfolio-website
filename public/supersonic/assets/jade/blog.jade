@@ -1,0 +1,254 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'blog'
+        .background
+        .flex-wrapper
+            .container-fluid.sidebar
+                .container.padding-0
+                    .row
+                        .col-md-2.col-md-offset-0.col-sm-2.col-sm-offset-1
+                            .categories-wrapper
+                                h6.brand-color.text-uppercase Categories
+                                .categories
+                                    button Design
+                                    button Typohraphy
+                                    button Travelling
+                                    button Basrball
+                                    button Development
+                                    button Fishing
+                                    button Music
+                                    button Art
+
+
+                        .col-md-6.hidden-xs.hidden-sm
+                            .recent-wrapper
+                                h6.brand-color.text-uppercase Recent Posts
+                                .row
+                                    .col-md-4
+                                        a(href="blog_open.html").reacent.animsition-link
+                                            img( alt="" src="img/blog/blog_small_1.png")
+                                            p Stay at the village and forget all your past
+                                    .col-md-4
+                                        a(href="blog_open.html").reacent.animsition-link
+                                            img( alt="" src="img/blog/blog_small_2.png")
+                                            p Mountains are seen on the horizon
+                                    .col-md-4
+                                        a(href="blog_open.html").reacent.animsition-link
+                                            img( alt="" src="img/blog/blog_small_3.png")
+                                            p There are so many kind of maps that is easy to confuse.
+
+                        .col-md-4.col-md-offset-0.col-sm-5.col-sm-offset-1
+                            .input-wrapper
+                                h6.brand-color.text-uppercase.search-header search
+                                .search
+                                    .form-group
+                                        input(id="input" type="text" name="name").form-control
+                                        label(for="input") What are you looking for?
+                                        button.btn-search
+                                    button.btn.btn-default.btn-sm search
+                                h6.brand-color.text-uppercase.subscribe-header subscribe
+                                form(action="#" id="subscribe").subscribe
+                                    .form-group
+                                        input(id="email" type="text" name="email").form-control
+                                        label(for="email") Your e-mail
+                                    button(type="submit").btn.btn-default.btn-sm subscribe
+
+                    .row
+                        .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-2
+                            .btn-path.sidebar-open
+                                .line
+                                .circle-btn
+            .main-content.align-center
+                .container
+
+                    .preview-wrapper.scroll-on-top
+                            .post-preview
+                                a(href="blog_open.html").animsition-link
+                                    img( alt="" src="img/blog/blog_1.png")
+                                a(href="blog_open.html").animsition-link
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase.animsition-link
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html").animsition-link
+                                    img( alt="" src="img/blog/blog_2.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_1.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_2.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_1.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                      |read more
+                                      i.fa.fa-angle-right
+
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_2.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_1.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_2.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+                            .post-preview
+                                a(href="blog_open.html")
+                                    img( alt="" src="img/blog/blog_1.png")
+                                a(href="blog_open.html")
+                                    h4 One interesting thing
+                                p Lorem ipsum dolor sit amet, eros habemus ex pri, civibus Et probatus constituto ad has, ei minim dolor sit. Meliore eum mrepudiandae no quo, ne est malis tantas sapientem.
+                                .meta-data
+                                    .activity
+                                        span
+                                            i.fa.fa-eye
+                                            | &nbsp;&nbsp;1,257
+                                        span
+                                            i.fa.fa-comment
+                                            | &nbsp;&nbsp;42
+                                        span
+                                            i.fa.fa-heart
+                                            | &nbsp;&nbsp;318
+                                    a(href="blog_open.html").text-uppercase
+                                        | read more
+                                        i.fa.fa-angle-right
+
+        include layout/_menu.jade
+        include layout/_scripts.jade

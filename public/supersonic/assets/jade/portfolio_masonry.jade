@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'portfolio'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container-fluid
+                    .row
+                        .col-sm-12
+                            .container
+                                .filter-wrapper
+                                    .portfolio-filter.filter
+                                        button.grid-btn.active(data-filter="*") All
+                                        button.grid-btn(data-filter=".photoshop") Photoshop
+                                        button.grid-btn(data-filter=".drupal") Drupal
+                                        button.grid-btn(data-filter=".php") PHP&MySQL
+                                        button.grid-btn(data-filter=".js") JavaScript
+                                        button.grid-btn(data-filter=".css") HTML&CSS
+                                        .masonry-scroll-btn.hidden-sm.hidden-xs
+                                            span.prev &lt;
+                                            span.next &gt;
+                            .masonry-wrapper
+                                .masonry-scroll.scroll.hidden-scroll
+                                    .portfolio-list-masonry.list-unstyled
+                                        .grid-sizer
+                                        .portfolio-item.drupal.js.css(data-background="img/portfolio/masonry/masonry_1.jpg")
+                                            a(href='portfolio-open.html').animsition-link
+                                        .portfolio-item.php.css(data-background="img/portfolio/masonry/masonry_1_1.jpg")
+                                            a(href='portfolio-open.html').animsition-link
+                                        .portfolio-item.height-2.width-2.php.css(data-background="img/portfolio/masonry/masonry_1_6.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.height-2.drupal.js(data-background="img/portfolio/masonry/masonry_2.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.photoshop.width-2.drupal.css(data-background="img/portfolio/masonry/masonry_3.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.php(data-background="img/portfolio/masonry/masonry_1_3.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.height-2.js.css(data-background="img/portfolio/masonry/masonry_2_1.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.width-2.drupal.css(data-background="img/portfolio/masonry/masonry_3_1.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.drupal.css(data-background="img/portfolio/masonry/masonry_1_2.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item(data-background="img/portfolio/masonry/masonry_1_4.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.photoshop.css(data-background="img/portfolio/masonry/masonry_1_5.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.js(data-background="img/portfolio/masonry/masonry_1_2.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.drupal.js(data-background="img/portfolio/masonry/masonry_2.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.height-2.width-2.php(data-background="img/portfolio/masonry/masonry_1_6.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.height-2(data-background="img/portfolio/masonry/masonry_2_1.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.photoshop.width-2.php(data-background="img/portfolio/masonry/masonry_3_1.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item(data-background="img/portfolio/masonry/masonry_1.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.height-2.js.css(data-background="img/portfolio/masonry/masonry_2.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.width-2.php(data-background="img/portfolio/masonry/masonry_3.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.js.css(data-background="img/portfolio/masonry/masonry_1_4.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item(data-background="img/portfolio/masonry/masonry_1_2.jpg")
+                                            a(href='portfolio-open.html')
+                                        .portfolio-item.photoshop.css(data-background="img/portfolio/masonry/masonry_1.jpg")
+                                            a(href='portfolio-open.html')
+
+
+        include layout/_menu.jade
+        include layout/_scripts.jade

@@ -1,0 +1,90 @@
+.about-page {
+  .about-header {
+    margin-top: 5px;
+    @media (max-width: 992px) {
+      margin-top: 70px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 25px;
+    }
+  }
+
+  .person-photo {
+    width: 100%;
+    max-width: 98%;
+  }
+
+  .about-toggle-button {
+    max-width: 400px;
+    width: 100%;
+    margin: 60px auto 30px;
+    &.active {
+      transition: all 1ms ease-in-out 300ms;
+      margin: 0 auto;
+    }
+  }
+
+  .showing-content {
+    display: none;
+
+    .about-graph {
+      height: 550px;
+      margin: 0 auto;
+
+      @media (max-width: 1400px) {
+        height: 470px;
+      }
+
+      @media (max-width: 767px) {
+        height: 300px;
+      }
+      @media (orientation:landscape) and (max-width: 767px) {
+        height: 200px;
+      }
+    }
+
+    .about-graph-buttons {
+      text-align: center;
+      margin: 10px 0;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 8px;
+        opacity: .5;
+        letter-spacing: 1px;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        &.active {
+          opacity: 1;
+        }
+
+      }
+    }
+  }
+
+  .contact-info {
+    margin-bottom: 30px;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .download-resume {
+    margin-top: 30px;
+
+    i {
+      margin-right: 15px;
+    }
+
+    a {
+      color: inherit;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+  }
+}

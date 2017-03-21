@@ -1,0 +1,119 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_light.jade
+    body.animsition
+        include layout/_preloader.jade
+        - var page = 'prices'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container
+                    .prices-table
+                        .overflow-hidden.gradient-sides-sm
+                            .overflow-auto-sm
+                                .table-headers.space-between
+                                    .price-header
+
+                                    .price-header
+                                        h4 Basic Plan
+                                        h2 50 $
+                                        p.text-uppercase per month
+                                        .underline
+
+                                    .price-header.active
+                                        h4 Standard Plan
+                                        h2 100 $
+                                        p.text-uppercase per month
+                                        .underline
+
+                                    .price-header
+                                        h4 Premium Plan
+                                        h2 200 $
+                                        p.text-uppercase per month
+                                        .underline
+                                .line
+                        .table-info
+                            .table-row
+                                p 3 Design Version
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                            .table-row
+                                p Fully Responsive Design
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                            .table-row
+                                p 15 Users
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                            .table-row
+                                p 500 MB Storage
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                            .table-row
+                                p 3.000 Entries per Month
+                                p
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                            .table-row
+                                p Long Term Supporting
+                                p
+                                p
+                                    span.circle
+                                p
+                                    span.circle
+                            .table-row
+                                p Layered PSD Included
+                                p
+                                p
+                                p
+                                    span.circle
+                            .table-row
+                                p Clean and well codes
+                                p
+                                p
+                                p
+                                    span.circle
+                            .table-row
+                                p Retina Ready
+                                p
+                                p
+                                p
+                                    span.circle
+                            .table-row
+                                p Google Fonts
+                                p
+                                p
+                                p
+                                    span.circle
+                        .btn-price-wrapper
+                            div
+                            div
+                                a.btn.btn-primary.text-uppercase get started
+                            div.active
+                                a.btn.btn-primary.text-uppercase get started
+                            div
+                                a.btn.btn-primary.text-uppercase get started
+
+        include layout/_menu_light.jade
+        include layout/_scripts.jade

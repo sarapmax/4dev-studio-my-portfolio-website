@@ -1,0 +1,60 @@
+{
+  "name": "enlighterjs",
+  "homepage": "http://enlighterjs.org",
+  "authors": [
+    "Andi Dittrich <opensource _AT andidittrich D-O-T de>"
+  ],
+  "description": "MooTools based Syntax Highlighter",
+  "main": [
+    "Build/EnlighterJS.js",
+    "Build/EnlighterJS.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "c++",
+    "code",
+    "coding",
+    "cpp",
+    "css",
+    "customizable",
+    "html",
+    "java",
+    "javascript",
+    "mootools",
+    "php",
+    "Python",
+    "Ruby",
+    "shell",
+    "sourcecode",
+    "sql",
+    "syntax",
+    "highlighting",
+    "themes",
+    "visual",
+    "editor",
+    "xml"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Util",
+    "Docs"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "version": "2.10.1",
+  "_release": "2.10.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.10.1",
+    "commit": "251dea6e9211bc97fb8dd71d6098390f1f9d0a0f"
+  },
+  "_source": "https://github.com/AndiDittrich/EnlighterJS.git",
+  "_target": "~2.10.1",
+  "_originalSource": "enlighterjs",
+  "_direct": true
+}

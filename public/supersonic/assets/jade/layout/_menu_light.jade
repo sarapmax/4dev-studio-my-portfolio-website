@@ -1,0 +1,96 @@
+.container.navigation.hidden-xs
+    nav
+        ul.menu.text-uppercase.animsition
+            - if (page == 'home')
+                li
+                    a(href='home_light.html').active.animsition-link home
+            - else
+                li
+                    a(href='home_light.html').animsition-link home
+
+            - if (page == 'about')
+                li
+                    a(href='about_light.html').active.animsition-link about
+            - else
+                li
+                    a(href='about_light.html').animsition-link about
+
+            - if (page == 'portfolio')
+                li
+                    a(href='portfolio_grid_light.html').active.animsition-link  portfolio
+            -else
+                li
+                    a(href='portfolio_grid_light.html').animsition-link  portfolio
+
+            - if (page == 'previews')
+                 li
+                    a(href='reviews_light.html').active.animsition-link reviews
+            - else
+                li
+                    a(href='reviews_light.html').animsition-link reviews
+
+            -if (page == 'prices')
+                li
+                    a(href='prices-style-1_light.html').active.animsition-link prices
+            - else
+                li
+                    a(href='prices-style-1_light.html').animsition-link prices
+
+            - if (page == 'contact')
+                li
+                    a(href='contacts_light.html').active.animsition-link contact
+            - else
+                li
+                    a(href='contacts_light.html').animsition-link contact
+
+            - if (page == 'blog')
+                li
+                    a(href='blog_light.html').active.animsition-link blog
+            - else
+                li
+                    a(href='blog_light.html').animsition-link blog
+        ul.social-links
+            li
+                a(href="#").fa.fa-facebook
+            li
+                a(href="#").fa.fa-instagram
+            li
+                a(href="#").fa.fa-twitter
+            li
+                a(href="#").fa.fa-pinterest
+
+.menu-mobile.visible-xs-block
+    .menu-icon-wrapper
+        .toggle-icon
+            span.bar
+            span
+            span.bar
+    .menu-content
+        .container.main-content.align-center
+            .row
+                .col-xs-8.col-xs-offset-2
+                    ul.menu
+                        li
+                            a(href='home_light.html').animsition-link home
+                        li
+                            a(href='about_light.html').animsition-link about
+                        li
+                            a(href='portfolio_grid_light.html').animsition-link  portfolio
+                        li
+                            a(href='reviews_light.html').animsition-link reviews
+                        li
+                            a(href='prices-style-1_light.html').animsition-link prices
+                        li
+                            a(href='contacts_light.html').animsition-link contact
+                        li
+                            a(href='blog_light.html').animsition-link blog
+                    .line
+                    ul.social-links
+                        li
+                            a(href="#").fa.fa-facebook
+                        li
+                            a(href="#").fa.fa-instagram
+                        li
+                            a(href="#").fa.fa-twitter
+                        li
+                            a(href="#").fa.fa-pinterest

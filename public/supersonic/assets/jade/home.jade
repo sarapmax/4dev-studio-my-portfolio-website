@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        include layout/_favicon.jade
+        include layout/_header.jade
+        include layout/_dark.jade
+    body.animsition.home-page
+        include layout/_preloader.jade
+        - var page = 'home'
+        .background
+        .flex-wrapper
+            .main-content.align-center
+                .container
+                    .row
+                        .col-md-12.col-sm-10.home-headings-container
+                            .title-box
+                                .text_bg_1.fullscreen_bg(data-background="img/main_bg/text_bg_1.png")
+                                .text_bg_2.fullscreen_bg(data-background="img/main_bg/text_bg_2.png")
+                                .text_bg_3.fullscreen_bg(data-background="img/main_bg/text_bg_3.png")
+                                .text_bg_4.fullscreen_bg(data-background="img/main_bg/text_bg_4.png")
+                                h1.home-heading.text-1-opacity I`m Sam Jackson
+                                h4.home-subheading UI Designer, WEB Developer
+                                h1(data-fontfamily="Poppins" data-bg="#1e1b22" data-text-mobile="Hey" data-text-desktop="Hello").title Hello
+                        .col-sm-12.text-center
+                            a(href="about.html").btn.btn-primary.text-uppercase About Me
+
+
+        include layout/_menu
+        include layout/_scripts
