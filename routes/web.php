@@ -29,6 +29,8 @@ Route::get('blog/{slug}', 'FrontBlogController@getBlog');
 
 Route::post('contact', 'ContactController@postContact');
 
+Route::get('graph_skill', 'SkillController@index');
+
 
 
 //============= Backoffice =============//

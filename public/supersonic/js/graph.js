@@ -11526,7 +11526,7 @@ var TextTooltip = function () {
                     } else {
                         return (0, _attributes.getPosition)(_this4.container, className + '-' + (i + 1)).left + 15 + 'px';
                     }
-                }).html('\n                    <div class="first-tooltip-helper">\n                        <span class="year">' + d.year + '</span>\n                    </div>\n                    <div class="second-tooltip-helper">\n                        <div class="second-tooltip-helper-container">\n                            <h2 class="title">' + (d.title) + '</h2>\n                            <span class="subtitle">' + d.subtitle + '</span>\n                            <p class="text">' + d.text + '</p>\n                        </div>\n                    </div>\n                ');
+                }).html('\n                    <div class="first-tooltip-helper">\n                        <span class="year">' + d.year + '</span>\n                    </div>\n                    <div class="second-tooltip-helper">\n                        <div class="second-tooltip-helper-container">\n                            <h2 class="title">' + (d.title + d.name) + '</h2>\n                            <span class="subtitle">' + d.subtitle + '</span>\n                            <p class="text">' + d.text + '</p>\n                        </div>\n                    </div>\n                ');
 
                 var tooltipWidth = (0, _d3Selection.select)('.second-tooltip-helper').node().getBoundingClientRect().width;
                 var hoverPosition = (0, _attributes.getPosition)(this.container, className + '-' + (i + 1)).right * -1;
@@ -11849,8 +11849,8 @@ var Graph = exports.Graph = function () {
             linesBgGradations: options.linesBgGradations || ['0%', '45%', '65%', '100%'],
             leftShadowBgGradations: options.leftShadowBgGradations || ['20%', '50%', '100%'],
             rightShadowBgGradations: options.rightShadowBgGradations || ['0%', '50%', '80%'],
-            circleShadowColor: options.circleShadowColor || (0, _d3Selection.select)(container).attr('data-circle-shadow') || '#113FA7',
-            circleShadowHoverColor: options.circleShadowHoverColor || (0, _d3Selection.select)(container).attr('data-circle-shadow-hover') || '#113FA7',
+            circleShadowColor: options.circleShadowColor || (0, _d3Selection.select)(container).attr('data-circle-shadow') || '#00dac0',
+            circleShadowHoverColor: options.circleShadowHoverColor || (0, _d3Selection.select)(container).attr('data-circle-shadow-hover') || '#00dac0',
             extendedTooltip: options.extendedTooltip || false
         };
 

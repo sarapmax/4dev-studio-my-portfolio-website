@@ -166,7 +166,7 @@ class PortfolioController extends Controller
             $portfolio->cover_img = $cover_img_file_name;
         }
 
-        $portfolio_type_id = $request->portfolio_type_id;
+        $portfolio->portfolio_type_id = $request->portfolio_type_id;
         $portfolio->name = $request->name;
         $portfolio->description = $request->description;
         $portfolio->client = $request->client;
