@@ -1591,8 +1591,8 @@ input:-webkit-autofill:active {
         right: 0; }
         .portfolio-list.grid .portfolio-item .content span a {
           text-decoration: none !important;
-          visibility: hidden;
-          opacity: 0;
+          /*visibility: hidden;*/
+          /*opacity: 0;*/
           display: inline-block;
           width: 100%;
           padding: 25px 0;
