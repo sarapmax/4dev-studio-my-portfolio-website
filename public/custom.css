@@ -8,3 +8,54 @@ pre {
 .vertical-text {
 	vertical-align: top;
 }
+
+.sidebar .categories-wrapper .categories a {
+    background: transparent;
+}
+.sidebar .categories-wrapper .categories a {
+    outline: none;
+    transition: all .2s ease;
+    font-size: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+    border: none;
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .categories-wrapper .categories a:hover {
+    color: #fff;
+}
+
+
+.sidebar .categories-wrapper .categories a .active {
+    color: #fff !important;
+}
+
+.categories-mobile .blog-filter .filter a {
+    background: transparent;
+    color: #fff;
+}
+
+.categories-mobile .blog-filter .filter a {
+    font-size: 10px;
+    font-size: 1rem;
+    outline: none !important;
+    background: transparent;
+    display: inline-block;
+    float: none;
+    z-index: 10;
+    padding: 4px 6px;
+    margin: 0 25px 0 0;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+
+
+
+
+

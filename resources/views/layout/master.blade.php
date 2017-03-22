@@ -49,9 +49,9 @@
           <li style="padding:0px;"><a href="{{ url('/') }}" class="animsition-link"><img style="width:40px;" src="{{ asset('img/4dev-logo-blue.png') }}"></a></li>
           <li><a href="{{ url('/') }}" class="animsition-link {{ Request::segment(1) == '' ? 'active' : '' }}">home</a></li>
           <li><a href="{{ url('about') }}" class="animsition-link {{ Request::segment(1) == 'about' ? 'active' : '' }}">about</a></li>
-          <li><a href="{{ url('portfolios') }}" class="animsition-link {{ Request::segment(1) == 'portfolios' ? 'active' : '' }}"> portfolio</a></li>
+          <li><a href="{{ url('portfolio') }}" class="animsition-link {{ Request::segment(1) == 'portfolio' ? 'active' : '' }}"> portfolio</a></li>
           <li><a href="{{ url('contact') }}" class="animsition-link {{ Request::segment(1) == 'contact' ? 'active' : '' }}">contact</a></li>
-          <li><a href="{{ url('blogs') }}" class="animsition-link {{ Request::segment(1) == 'blogs' ? 'active' : '' }}">blog</a></li>
+          <li><a href="{{ url('blog') }}" class="animsition-link {{ Request::segment(1) == 'blog' ? 'active' : '' }}">blog</a></li>
         </ul>
         <ul class="social-links">
           <li><a href="#" class="fa fa-facebook"></a></li>
@@ -72,7 +72,7 @@
                 <li><a href="{{ url('about') }}" class="animsition-link">about</a></li>
                 <li><a href="{{ url('portfolio') }}" class="animsition-link"> portfolio</a></li>
                 <li><a href="{{ url('contact') }}" class="animsition-link">contact</a></li>
-                <li><a href="{{ url('blogs') }}" class="animsition-link">blog</a></li>
+                <li><a href="{{ url('blog') }}" class="animsition-link">blog</a></li>
               </ul>
               <div class="line"></div>
               <ul class="social-links">

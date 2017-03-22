@@ -155,7 +155,7 @@
                 fontSize    = 190,
                 fontWeight  = 800,
                 fontFamily  = '"Poppins"',
-                bg          = 'rgba(0, 209, 183, 1)';
+                bg          = '#1752A9';
 
             if (window.innerWidth <= 767) {
                 title.text(title.attr('data-text-mobile'));
@@ -590,7 +590,7 @@
                 $(".preview-wrapper").toggleClass('sidebar-pushed');
             });
             $('.sidebar .input-wrapper').append('<div class="categories-mobile"><div class="blog-filter filter-wrapper"><div class="filter"></div></div></div>');
-            $('.categories button').clone().appendTo(".filter");
+            $('.categories a').clone().appendTo(".filter");
             $('.categories-wrapper > h6').clone().prependTo(".categories-mobile");
 
             $('.post-preview').hover(

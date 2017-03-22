@@ -8,21 +8,33 @@
 	    <div class="post">
 	      <div class="row margin-0">
 	        <div class="col-md-10 col-md-offset-1 col-sm-10">
-	          <h2 class="text-center text-1-opacity">Morning Beauty</h2>
-	          <div class="post-img"><img alt="" src="{{ asset('supersonic/img/blog/blog-open-img.png') }}"></div>
+	          <h2 class="text-center text-1-opacity">{{ $blog->title }}</h2>
+	          <div class="post-img"><img alt="" src="{{ asset('uploads/blog_cover_images/'.$blog->cover_img) }}"></div>
 	        </div>
 	        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-1">
 	          <div class="post-text">
-	            {!! App\Blog::find(1)->body !!}
+	            {!! $blog->body !!}
 	            <div class="meta-data">
-	              <div class="activity"><span><i class="fa fa-eye"></i>&nbsp;&nbsp;1,257</span><span><i class="fa fa-comment"></i>&nbsp;&nbsp;42</span><span><i class="fa fa-heart"></i>&nbsp;&nbsp;318</span></div><span class="share text-uppercase"><span>share:</span><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-pinterest"></a></span>
+	              <div>
+	              	Tag(s) : &nbsp;&nbsp;
+		            @foreach($blog->tag as $tag)
+		            <a {{ Request::segment(2) == 'tag' && Request::segment(3) == $tag->slug ? 'style=color:#fff;' : '' }} href="{{ url('blog/tag/'.$tag->slug) }}"><i class="fa fa-tag"> </i> {{ $tag->name }}&nbsp;&nbsp;</a>
+		            @endforeach
+	              </div><br/>
+	              <div>
+	              	Date : &nbsp;&nbsp; {{ $blog->created_at->format('d/m/Y') }}
+	              </div><br/><br/>
+	              <div class="activity">
+	              	<span><i class="fa fa-eye"></i>&nbsp;&nbsp;{{ number_format($blog->view) }}</span></div>
+	              	<span class="share text-uppercase"><span>share:</span>
+		              	<a href="#" class="fa fa-facebook"></a>
+		              	<a href="#" class="fa fa-instagram"></a>
+		              	<a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-pinterest"></a>
+	              	</span>
 	            </div>
-	  {{--           config.extraPlugins = 'codesnippet,colorbutton,colordialog,uploadimage,colordialog';
-	config.codeSnippet_theme = 'monokai_sublime';
-	config.imageUploadUrl = '/uploader/upload.php?type=Images'; --}}
 	          </div>
 	        </div>
-	        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-1">
+{{-- 	        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-1">
 	          <div id="comments">
 	            <h2 class="brand-color text-center">Comments</h2>
 	            <ol class="comment-list">
@@ -74,8 +86,8 @@
 	              </li>
 	            </ol>
 	          </div>
-	        </div>
-	        <div class="col-md-12 col-sm-10">
+	        </div> --}}
+{{-- 	        <div class="col-md-12 col-sm-10">
 	          <div class="line"></div>
 	        </div>
 	        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-1">
@@ -98,7 +110,7 @@
 	              <button class="btn btn-primary">comment</button>
 	            </form>
 	          </div>
-	        </div>
+	        </div> --}}
 	      </div>
 	    </div>
 	  </div>

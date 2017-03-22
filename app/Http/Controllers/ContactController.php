@@ -55,4 +55,8 @@ class ContactController extends Controller
 
     	return redirect()->back();
     }
+
+    public function getContactFrontPage() {
+        return view('contact');
+    }
 }

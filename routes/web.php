@@ -11,32 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@getHomePage');
 
-Route::get('about', function () {
-	File::put('supersonic/js/second-graph-data.json', App\Experience::orderBy('year', 'ASC')->get());
-	File::put('supersonic/js/graph-data.json', App\Skill::all());
+Route::get('about', 'HomeController@getAboutPage');
 
-    return view('about');
-});
-
-Route::get('portfolios', 'FrontPortfolioController@index');
+Route::get('portfolio', 'FrontPortfolioController@index');
 
 Route::get('portfolio/{slug}', 'FrontPortfolioController@getPortfolio');
 
-Route::get('contact', function () {
-    return view('contact');
-});
+Route::get('contact', 'ContactController@getContactFrontPage');
 
-Route::get('blogs', function () {
-    return view('blogs');
-});
+Route::get('blog', 'FrontBlogController@index');
 
-Route::get('blogs/open', function() {
-	return view('blog_open');
-});
+Route::get('blog/tag/{slug}', 'FrontBlogController@getBlogsByTag');
+
+Route::get('blog/{slug}', 'FrontBlogController@getBlog');
 
 Route::post('contact', 'ContactController@postContact');
 
