@@ -17,7 +17,7 @@
           <h1 data-fontfamily="Poppins" data-bg="#1e1b22" data-text-mobile="Dev" data-text-desktop="4dev" class="title">Hello</h1>
         </div>
       </div>
-      <div class="col-sm-12 text-center"><a href="about.html" class="btn btn-primary text-uppercase">About Me</a></div>
+      <div class="col-sm-12 text-center"><a href="{{ url('about') }}" class="btn btn-primary text-uppercase">About Me</a></div>
     </div>
   </div>
 </div>
