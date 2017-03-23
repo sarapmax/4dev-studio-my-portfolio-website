@@ -57,6 +57,10 @@ class ContactController extends Controller
     }
 
     public function getContactFrontPage() {
-        return view('contact');
+        $meta = [
+            'title' => 'ติดต่อเรา ',
+        ];
+
+        return view('contact', ['meta' => $meta]);
     }
 }

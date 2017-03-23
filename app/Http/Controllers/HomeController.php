@@ -13,10 +13,14 @@ class HomeController extends Controller
     }
 
     public function getAboutPage() {
+
+    	$meta = [
+            'title' => 'About Myself ',
+        ];
     	
 		File::put('supersonic/js/second-graph-data.json', Experience::orderBy('year', 'ASC')->get());
 		File::put('supersonic/js/graph-data.json', Skill::all());
 
-	    return view('about');
+	    return view('about', ['meta' => $meta]);
     }
 }

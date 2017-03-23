@@ -11,9 +11,15 @@ class FrontBlogController extends Controller
     	$tags = Tag::orderBy('name', 'DESC')->get();
 		$blogs = Blog::all();
 
+        $meta = [
+            'title' => 'Blog ',
+            'description' => 'เราเขียนบทความต่างๆ ขึ้นมาเพื่อให้ความรู้ แชร์ประสบการณ์ และแบ่งปันให้คนอื่น เพื่อให้คนที่เข้ามาอ่านได้รับความรู้ และนำไปใช้งานจริงได้',
+        ];
+
         return view('blogs', [
             'blogs' => $blogs,
             'tags' => $tags,
+            'meta' => $meta,
         ]);
     }
 
@@ -23,8 +29,15 @@ class FrontBlogController extends Controller
     	$blog->view++;
     	$blog->save();
 
+        $meta = [
+            'title' => $blog->title,
+            'description' => $blog->body,
+            'image' => 'uploads/blog_cover_images/'.$blog->cover_img,
+        ];
+
     	return view('blog', [
     		'blog' => $blog,
+            'meta' => $meta,
     	]);
     }
 
@@ -34,9 +47,15 @@ class FrontBlogController extends Controller
 			$q->whereSlug($slug);
 		})->get();
 
+        $meta = [
+            'title' => 'บทความ '. $slug,
+            'description' => 'หาความรู้ และทำความเข้าใจเกี่ยวกับ ' .$slug,
+        ];
+
         return view('blogs', [
             'blogs' => $blogs,
             'tags' => $tags,
+            'meta' => $meta,
         ]);
     }
 }

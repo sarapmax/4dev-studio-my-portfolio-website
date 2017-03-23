@@ -11,6 +11,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Better by Development and Design. เรามีประสบการณ์ในการสร้างสรรค์ผลงานมากมาย ทุกๆ งาน เหมือนกับศิลปะที่เราจะทำด้วยความคิดสร้างสรรค์และความตั้งใจ และสร้างสิ่งเหล่านั้นออกมาอย่างดีที่สุด">
+    <meta name="keywords" content="web application, website, web design, cms, seo, เว็บไซต์, freelance, web developer freelance, ฟรีแลนซ์, รับงานเขียนเว็บ, รับงานออกแบบ, สื่อออนไลน์, เรียนรู้การเขียนเว็บ, สร้างแบรนด์, online marketing">
+    <meta name="author" content="Teerpong Phothiphun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('supersonic/css/animsition.min.css') }}">
     <link rel="stylesheet" href="{{ asset('supersonic/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('supersonic/css/owl.carousel.css') }}">
@@ -19,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('supersonic/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('supersonic/css/graph.css') }}">
     <link rel="stylesheet" href="{{ asset('supersonic/css/main.css') }}">
-    <title>4dev | Studio</title>
+    @include('layout._meta')
     <link rel="stylesheet" href="{{ asset('supersonic/css/dark.css') }}">
 
     <link href="{{ asset('bower_components/devicon/devicon.css') }}" rel="stylesheet">
