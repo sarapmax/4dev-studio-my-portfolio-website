@@ -50,7 +50,7 @@
     <div class="container navigation hidden-xs">
       <nav>
         <ul class="menu text-uppercase">
-          <li style="padding:0px;"><a href="{{ url('/') }}" class="animsition-link"><img style="width:40px;" src="{{ asset('img/4dev-logo-blue.png') }}"></a></li>
+          <li style="padding:0px;"><a href="{{ url('/') }}" class="animsition-link"><img style="width:60px;" src="{{ asset('img/4dev-logo-blue.png') }}"></a></li>
           <li><a href="{{ url('/') }}" class="animsition-link {{ Request::segment(1) == '' ? 'active' : '' }}">home</a></li>
           <li><a href="{{ url('about') }}" class="animsition-link {{ Request::segment(1) == 'about' ? 'active' : '' }}">about</a></li>
           <li><a href="{{ url('portfolio') }}" class="animsition-link {{ Request::segment(1) == 'portfolio' ? 'active' : '' }}"> portfolio</a></li>
