@@ -33,7 +33,8 @@
               <p><span class="info text-uppercase vertical-text">services</span><span class="info-description"> {{ $portfolio->services }}</span></p>
               <p><span class="info text-uppercase vertical-text">year</span><span class="info-description"> {{ $portfolio->year }}</span></p>
               <p><span class="info text-uppercase vertical-text">website</span><span class="info-description"><a href="{{ $portfolio->website }}" target="_blank"> {{ $portfolio->website }}</a></span></p>
-              <p><span class="info text-uppercase vertical-text">share</span><span class="info-description"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.regentmfu.net/" class="fa fa-facebook"></a></span></p>
+              <p><span class="info text-uppercase vertical-text">share</span><span class="info-description"><a href="http://www.facebook.com/sharer" onclick="window.open(this.href, '4devstudio.com',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-facebook"></i></a></span></p>
             </div>
           </div>
         </div>
