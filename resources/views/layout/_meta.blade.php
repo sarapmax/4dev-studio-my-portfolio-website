@@ -7,7 +7,7 @@
 @if(!empty($meta['image']))
     <meta property="og:image" content="{{ url($meta['image']) }}"/>
 @else
-    <meta property="og:image" content="{{ url('img/4dev-logo-blue.png') }}"/>
+    <meta property="og:image" content="{{ url('img/4dev-logo-sharer.png') }}"/>
 @endif
 @if(!empty($meta['description']))
     <meta property="og:description" content="{{ str_limit($meta['description'], $limit = 100, $end = '...') }}"/>
@@ -33,7 +33,7 @@
 @if(!empty($meta['image']))
     <meta itemprop="image" content="{{ url($meta['image']) }}"/>
 @else
-    <meta itemprop="image" content="{{ url('img/4dev-logo-blue.png') }}"/>
+    <meta itemprop="image" content="{{ url('img/4dev-logo-sharer.png') }}"/>
 @endif
     <!-- Twitter Metadata /-->
     <meta name="twitter:card" content="summary"/>
@@ -51,6 +51,6 @@
 @if(!empty($meta['image']))
     <meta name="twitter:image" content="{{ url($meta['image']) }}"/>
 @else
-    <meta name="twitter:image" content="{{ url('img/4dev-logo-blue.png') }}"/>
+    <meta name="twitter:image" content="{{ url('img/4dev-logo-sharer.png') }}"/>
 @endif
     <meta name="twitter:domain" content="4devstudio.com">
